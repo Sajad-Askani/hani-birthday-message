@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تولد مبارک هانی جان!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Animated background */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.6;
+        }
+
+        /* Main container */
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 800px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Decorative elements */
+        .decoration {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 30px;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .greeting {
+            color: #764ba2;
+            font-size: 1.5em;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .message {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            line-height: 2;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        .poem {
+            background: #f8f9ff;
+            border-right: 5px solid #667eea;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 10px;
+            line-height: 2.5;
+            font-size: 1.2em;
+            color: #333;
+            text-align: right;
+        }
+
+        .poem-line {
+            margin: 15px 0;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .signature {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.1em;
+            color: #764ba2;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .greeting {
+                font-size: 1.2em;
+            }
+
+            .poem {
+                font-size: 1em;
+                line-height: 2;
+            }
+        }
+
+        .heart {
+            color: #ff6b6b;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+        <div class="decoration">🎂✨💛</div>
+
+        <h1>تولدت مبارک!</h1>
+        <p class="greeting">هانی جان عشق زندگی من</p>
+
+        <div class="message">
+            سلام عشق زندگم هانی جانم<br>
+            من بهترین تجربه ام در زندگی وقت های بودن کنار توکذراندم<br>
+            من همیشه دلم میخواد که برای تو بهترین عشقی که لایقشی بورزم<br>
+            <span class="heart">❤️</span>
+        </div>
+
+        <div class="poem">
+            <div class="poem-line">تو خورشیدی و من چرخیده‌ام دورت</div>
+            <div class="poem-line">جهان روشن شده از نور و حضورت</div>
+            <div class="poem-line">هانیِ مهربانم، مرزِ زیبایی</div>
+            <div class="poem-line">تو پاداشِ تمامِ آرزوهایی</div>
+            <div class="poem-line">تولدت مبارک، ای که هر نفست</div>
+            <div class="poem-line">دلیلِ زنده بودن، آرامشِ دل است</div>
+            <div class="poem-line">بمان برای من تا انتهای زمان</div>
+            <div class="poem-line">که با تو قشنگ است تمامِ این جهان</div>
+        </div>
+
+        <p class="signature">
+            با تمام عشق و محبت <span class="heart">💛</span>
+        </p>
+
+        <div class="footer">
+            ✨ این صفحه برای یک انسان خاص ساخته شده است ✨
+        </div>
+    </div>
+
+    <script>
+        // Generate random stars
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 50; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 2 + 's';
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>
